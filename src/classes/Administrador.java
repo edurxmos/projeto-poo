@@ -15,4 +15,11 @@ public class Administrador extends Pessoa {
         super(id, nome);
         this.eventos = eventos;
     }
+
+    @Override
+    public String toString() {
+        return "Administrador{" +
+                "eventos=" + eventos +
+                '}';
+    }
 }

@@ -26,4 +26,12 @@ public class Estudante extends Pessoa {
     public void setEvento(Evento evento) {
         this.evento = evento;
     }
+
+    @Override
+    public String toString() {
+        return "Estudante{" +
+                "matricula=" + matricula +
+                ", evento=" + evento +
+                '}';
+    }
 }

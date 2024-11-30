@@ -2,6 +2,8 @@ package classes;
 
 import enums.Tipo;
 
+import java.util.Arrays;
+
 public class Evento {
 
     private String nome;
@@ -46,5 +48,15 @@ public class Evento {
 
     public void setAdministrador(Administrador administrador) {
         this.administrador = administrador;
+    }
+
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "nome='" + nome + '\'' +
+                ", tipo=" + tipo +
+                ", estudantes=" + Arrays.toString(estudantes) +
+                ", administrador=" + administrador +
+                '}';
     }
 }
